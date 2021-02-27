@@ -34,7 +34,7 @@ public class MazeDisplayer : MonoBehaviour
 		
 		// transform.localPosition = new Vector3((width - 1) / -2f, (height - 1) / 2f);
 
-		c.cullingMask = 1 << 30;
+		c.cullingMask = 30;
 		
 		var localPosition = c.transform.localPosition;
 		var newCamPosition = new Vector3(
@@ -117,7 +117,7 @@ public class MazeDisplayer : MonoBehaviour
 			_wallMesh,
 			_wall.transform.localToWorldMatrix,
 			m,
-			30,
+			1,
 			_camera,
 			0,
 			null,

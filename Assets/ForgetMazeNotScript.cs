@@ -85,7 +85,7 @@ public class ForgetMazeNotScript : MonoBehaviour
 		if (_light == null)
 		{
 			_light = Instantiate(mazeLight);
-			_light.GetComponent<Light>().cullingMask = 1 << 30;
+			_light.GetComponent<Light>().cullingMask = 30;
 			_light.name = "FZNLight";
 			float scalar = transform.lossyScale.x;
 			_light.GetComponent<Light>().range *= scalar;
